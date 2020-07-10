@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.4.1.slim.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "clientes-app"
+    }
+  },
+  "defaultProject": "clientes-app",
+  "cli": {
+    "analytics": "1a2613bc-020e-4f7d-8c42-7828e1052a2d"
+  }
 }

@@ -1,0 +1,30 @@
+<div class="card borde-primary mb-3">
+    <!-- <div class="card-header">Clientes</div> -->
+    <div class="card-body">
+        <h5 class="card-title">Listado de clientes</h5>
+
+        <table class="table table-bordered table-striped" *ngIf="clientes?.length>0">
+            <thead>
+                <tr>
+                    <!-- <th>id</th> -->
+                    <th>titulo</th>
+                    <th>autor</th>
+                    <th>twiter</th>
+                    <th>blog</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes">
+                    <!-- <td>{{cliente.id}}</td> -->
+                    <td>{{cliente.titulo}}</td>
+                    <td>{{cliente.autor}}</td>
+                    <td>{{cliente.twiter}}</td>
+                    <td> <a target="_blank" href="{{cliente.blog}}">blog</a></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
